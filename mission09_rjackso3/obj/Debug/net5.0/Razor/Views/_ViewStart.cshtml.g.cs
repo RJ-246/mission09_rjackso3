@@ -33,8 +33,15 @@ using mission09_rjackso3.Models.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/Users/rjackso3/Projects/mission09_rjackso3/mission09_rjackso3/Views/_ViewImports.cshtml"
+using mission09_rjackso3.Infrastructure;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"13d997f3c0487a4271425847f520061dffe2e64d", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0ab1f210825c9d22e427480f3259d6660a3bfcbe", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"528e5da20e3fa86b2f81ebca4132d9fa89820fc0", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

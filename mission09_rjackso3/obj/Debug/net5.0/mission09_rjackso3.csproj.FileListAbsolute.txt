@@ -70,3 +70,8 @@
 /Users/rjackso3/Projects/mission09_rjackso3/mission09_rjackso3/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/rjackso3/Projects/mission09_rjackso3/mission09_rjackso3/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
 /Users/rjackso3/Projects/mission09_rjackso3/mission09_rjackso3/obj/Debug/net5.0/Razor/Views/Shared/Components/Categories/Default.cshtml.g.cs
+/Users/rjackso3/Projects/mission09_rjackso3/mission09_rjackso3/obj/Debug/net5.0/Razor/Views/Shared/BookSummary.cshtml.g.cs
+/Users/rjackso3/Projects/mission09_rjackso3/mission09_rjackso3/obj/Debug/net5.0/Razor/Pages/ShoppingCart.cshtml.g.cs
+/Users/rjackso3/Projects/mission09_rjackso3/mission09_rjackso3/obj/Debug/net5.0/Razor/Pages/_CartLayout.cshtml.g.cs
+/Users/rjackso3/Projects/mission09_rjackso3/mission09_rjackso3/obj/Debug/net5.0/Razor/Pages/_ViewImports.cshtml.g.cs
+/Users/rjackso3/Projects/mission09_rjackso3/mission09_rjackso3/obj/Debug/net5.0/Razor/Pages/_ViewStart.cshtml.g.cs

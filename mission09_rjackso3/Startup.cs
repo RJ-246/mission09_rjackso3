@@ -32,6 +32,13 @@ namespace mission09_rjackso3
             });
 
             services.AddScoped<IBookRepository, BookRepository>();
+
+            //Code for adding Pages
+            services.AddRazorPages();
+
+            //Code for adding sessions
+            services.AddDistributedMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,13 +56,14 @@ namespace mission09_rjackso3
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
+                //Creates a route for each possible combination of info
                 endpoints.MapControllerRoute("categorypage", "{category}/page{pageNum}", new { Controller = "Home", Action = "Index" });
 
                 endpoints.MapControllerRoute("category", "{category}", new { Controller = "Home", Action = "Index", pageNum = 1 });
@@ -63,6 +71,9 @@ namespace mission09_rjackso3
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapDefaultControllerRoute();
+                endpoints.MapRazorPages();
             });
         }
     }
