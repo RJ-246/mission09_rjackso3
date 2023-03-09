@@ -1,16 +1,20 @@
 ﻿<Properties StartupConfiguration="{3C3CBCEA-71DE-489E-B3B3-65BDBC956B47}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.mission09__rjackso3 PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="mission09_rjackso3/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="mission09_rjackso3/Views/Shared/Components/Categories/Default.cshtml">
     <Files>
-      <File FileName="mission09_rjackso3/Views/Components/Categories/Default.cshtml" Line="8" Column="164" />
-      <File FileName="mission09_rjackso3/Components/CategoriesViewComponent.cs" Line="10" Column="23" />
-      <File FileName="mission09_rjackso3/Models/Book.cs" Line="1" Column="1" />
-      <File FileName="mission09_rjackso3/Views/Shared/_Layout.cshtml" Line="21" Column="36" />
-      <File FileName="mission09_rjackso3/Controllers/HomeController.cs" Line="32" Column="130" />
-      <File FileName="mission09_rjackso3/Program.cs" Line="16" Column="1" />
-      <File FileName="mission09_rjackso3/Startup.cs" Line="61" Column="131" />
+      <File FileName="mission09_rjackso3/Components/CategoriesViewComponent.cs" />
+      <File FileName="mission09_rjackso3/Startup.cs" />
+      <File FileName="mission09_rjackso3/Views/Shared/BookSummary.cshtml" />
+      <File FileName="mission09_rjackso3/Views/Home/Index.cshtml" />
+      <File FileName="mission09_rjackso3/Views/Shared/Components/Categories/Default.cshtml" Line="13" Column="195" />
+      <File FileName="mission09_rjackso3/Pages/ShoppingCart.cshtml" />
+      <File FileName="mission09_rjackso3/Pages/ShoppingCart.cshtml.cs" Line="45" Column="31" />
+      <File FileName="mission09_rjackso3/Pages/_CartLayout.cshtml" />
+      <File FileName="mission09_rjackso3/Pages/_ViewImports.cshtml" />
+      <File FileName="mission09_rjackso3/Pages/_ViewStart.cshtml" />
+      <File FileName="mission09_rjackso3/Models/Basket.cs" />
+      <File FileName="mission09_rjackso3/Infrastructure/SessionExtensions.cs" />
+      <File FileName="mission09_rjackso3/Infrastructure/UrlExtensions.cs" />
+      <File FileName="mission09_rjackso3/Views/_ViewImports.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,15 +27,19 @@
               <Node name="Models" expanded="True">
                 <Node name="ViewModels" expanded="True" />
               </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="ShoppingCart.cshtml" expanded="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True">
                   <Node name="Components" expanded="True">
-                    <Node name="Categories" expanded="True" />
+                    <Node name="Categories" expanded="True">
+                      <Node name="Default.cshtml" selected="True" />
+                    </Node>
                   </Node>
                 </Node>
               </Node>
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -42,4 +50,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.mission09__rjackso3 PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
 </Properties>

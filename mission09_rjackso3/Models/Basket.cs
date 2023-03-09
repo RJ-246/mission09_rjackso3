@@ -35,6 +35,11 @@ namespace mission09_rjackso3.Models
 			double sum = (Items.Sum(x => x.Quantity * x.book.Price));
 			return sum;
 		}
+		public int Count()
+		{
+			int count = Items.Count;
+			return count;
+		}
 	}
 
 	public class BasketLineItem

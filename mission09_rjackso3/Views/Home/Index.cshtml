@@ -3,29 +3,32 @@
 }
 @model BooksViewModel
 
-<h1>Books</h1>
-@foreach (Book b in Model.Books)
+    @*This A tag was added to try using badges in bootstrap*@
+    <a class="btn btn-dark text-white position-relative" style="float:right" href="/ShoppingCart">Cart <span class="badge bg-primary">@Model.Basket.Items.Sum(x => x.Quantity)</span></a>
+    <h1>Books</h1>
+    @foreach (Book b in Model.Books)
     {
-    //Partial for each book entry
-    <partial name="BookSummary" model="b" />
-   }
-<div page-model="@Model.PageInfo" page-action="Index" page-classes-enabled="true"
-     page-class="btn" page-class-normal="btn-outline-dark"
-     page-class-selected="btn-primary" class="btn-group float-end m-1">
-</div>
+        //Partial for each book entry
+        <partial name="BookSummary" model="b" />
+    }
+    <div page-model="@Model.PageInfo" page-action="Index" page-classes-enabled="true"
+         page-class="btn" page-class-normal="btn-outline-dark"
+         page-class-selected="btn-primary" class="btn-group float-end m-1">
+    </div>
 
 
 
-@*<h4>Book Title: @b.Title </h4>
-<ul>
-    <li>Author: @b.Author</li>
-    <li>Publisher: @b.Publisher</li>
-    <li>ISBN: @b.Isbn</li>
-    <li>Classification: @b.Classification</li>
-    <li>Category: @b.Category</li>
-    <li>Page Count: @b.PageCount</li>
-    <li>Price: $@b.Price</li>
-</ul>
-}*@
 
-@*<div page-model="@Model.PageInfo" page-action="Index"></div>*@
+    @*<h4>Book Title: @b.Title </h4>
+        <ul>
+            <li>Author: @b.Author</li>
+            <li>Publisher: @b.Publisher</li>
+            <li>ISBN: @b.Isbn</li>
+            <li>Classification: @b.Classification</li>
+            <li>Category: @b.Category</li>
+            <li>Page Count: @b.PageCount</li>
+            <li>Price: $@b.Price</li>
+        </ul>
+        }*@
+
+    @*<div page-model="@Model.PageInfo" page-action="Index"></div>*@

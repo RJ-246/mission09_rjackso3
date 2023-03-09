@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using mission09_rjackso3.Infrastructure;
 using mission09_rjackso3.Models;
 using mission09_rjackso3.Models.ViewModels;
 //using mission09_rjackso3.Models;
@@ -19,6 +20,7 @@ namespace mission09_rjackso3.Controllers
 
         public IActionResult Index(string category, int pageNum = 1)
         {
+            Basket basket = HttpContext.Session.GetJson<Basket>("basket") ?? new Basket();
             int pageSize = 10;
             var data = new BooksViewModel
             {
@@ -29,10 +31,11 @@ namespace mission09_rjackso3.Controllers
                 .Take(pageSize),
                 PageInfo = new PageInfo
                 {
-                    TotalBookNum = (category == null ? repo.Books.Count() : repo.Books.Where(b=> b.Category == category).Count()),
+                    TotalBookNum = (category == null ? repo.Books.Count() : repo.Books.Where(b => b.Category == category).Count()),
                     BooksPerPage = pageSize,
                     CurrentPage = pageNum
-                }
+                },
+                Basket = basket
             };
 
             return View(data);
