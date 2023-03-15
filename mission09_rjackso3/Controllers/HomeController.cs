@@ -34,8 +34,8 @@ namespace mission09_rjackso3.Controllers
                     TotalBookNum = (category == null ? repo.Books.Count() : repo.Books.Where(b => b.Category == category).Count()),
                     BooksPerPage = pageSize,
                     CurrentPage = pageNum
-                },
-                Basket = basket
+                }
+                
             };
 
             return View(data);
