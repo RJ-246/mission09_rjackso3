@@ -5,6 +5,7 @@
 }
 @model Basket
 <div class="">
+    @*Checks to make sure there are items in the cart before calculating the total*@
     @if (Model.Items.Count() >0) {
         <small class="navbar-text">
             <b>Your Cart:</b>

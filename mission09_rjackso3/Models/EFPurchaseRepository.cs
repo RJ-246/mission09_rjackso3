@@ -17,6 +17,7 @@ namespace mission09_rjackso3.Models
         {
             context.AttachRange(purchase.Lines.Select(x => x.book));
 
+            //Adds the purchase to the DB if it doesn't exist
             if (purchase.PurchaseID == 0)
             {
                 context.Purchases.Add(purchase);

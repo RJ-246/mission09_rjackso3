@@ -11,6 +11,7 @@ namespace mission09_rjackso3.Controllers
 {
     public class PurchaseController : Controller
     {
+        //sets up new private repo and basket for use in this class
         private IPurchaseRepository repo { get; set; }
         private Basket basket { get; set; }
 
@@ -29,6 +30,7 @@ namespace mission09_rjackso3.Controllers
         [HttpPost]
         public IActionResult Checkout(Purchase purchase)
         {
+            //Throws error if basket is empty
             if (basket.Items.Count() == 0)
             {
                 ModelState.AddModelError("", "Sorry, your basket is empty!");
@@ -36,6 +38,7 @@ namespace mission09_rjackso3.Controllers
 
             if (ModelState.IsValid)
             {
+                //Saves purchase to database
                 purchase.Lines = basket.Items.ToArray();
                 repo.SavePurchase(purchase);
                 basket.ClearBasket();
